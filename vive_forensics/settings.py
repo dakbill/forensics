@@ -67,6 +67,7 @@ WSGI_APPLICATION = 'vive_forensics.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -111,3 +112,6 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'public', 'media')
 MEDIA_URL = '/media/'
+
+import dj_database_url
+DATABASES['default'] =  dj_database_url.config()
