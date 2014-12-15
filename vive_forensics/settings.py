@@ -13,8 +13,10 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 PROJECT_ROOT = os.path.dirname(__file__)
 APPS_DIR = os.path.join(BASE_DIR,'.','apps')
+LIBS_DIR = os.path.join(BASE_DIR,'.','libs')
 import sys
 sys.path.insert(0,APPS_DIR)
+sys.path.insert(1,LIBS_DIR)
 
 
 
