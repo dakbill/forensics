@@ -1,1 +1,1 @@
-heroku ps:scale web=1
+web: gunicorn vive_forensics.wsgi 
