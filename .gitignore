@@ -1,2 +1,3 @@
 vive_forensics/public/*
 *.pyc
+libs/*
